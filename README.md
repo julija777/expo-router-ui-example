@@ -2,6 +2,10 @@
 
 This project demonstrates how to implement custom tabs in an Expo app using Expo Router UI, following the approach from the [Expo blog post](https://expo.dev/blog/how-to-build-custom-tabs-with-expo-router-ui).
 
+## Demo
+
+https://github.com/julija777/expo-router-ui-example/assets/videos/demo.mp4
+
 ## Features
 
 - Custom tab bar with blur effect
