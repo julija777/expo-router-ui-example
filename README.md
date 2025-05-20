@@ -1,50 +1,74 @@
-# Welcome to your Expo app 👋
+# Custom Tabs with Expo Router UI
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This project demonstrates how to implement custom tabs in an Expo app using Expo Router UI, following the approach from the [Expo blog post](https://expo.dev/blog/how-to-build-custom-tabs-with-expo-router-ui).
 
-## Get started
+## Features
 
-1. Install dependencies
+- Custom tab bar with blur effect
+- Animated tab transitions
+- Dark/Light mode support
+- Type-safe navigation
+- Modern UI with smooth animations
 
-   ```bash
-   npm install
-   ```
+## Project Structure
 
-2. Start the app
-
-   ```bash
-   npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```
+app/
+├── _layout.tsx        # Main tab navigation layout
+├── index.tsx          # Home screen
+├── search.tsx         # Search screen
+├── settings.tsx       # Settings screen
+components/
+├── CustomTabBar.tsx   # Custom tab bar implementation
+└── CustomTabList.tsx  # Custom tab list component
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+## Getting Started
 
-## Learn more
+1. Install dependencies:
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+2. Start the development server:
+```bash
+npm start
+```
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Implementation Details
 
-## Join the community
+The project uses the new `expo-router/ui` package to implement custom tabs. Key components:
 
-Join our community of developers creating universal apps.
+- `Tabs`: The main tab container
+- `TabList`: Custom tab list component
+- `TabTrigger`: Individual tab buttons
+- `TabSlot`: Content slot for tab screens
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### Custom Tab Bar
+
+The custom tab bar features:
+- Blur effect background using `expo-blur`
+- Animated transitions with `react-native-reanimated`
+- Proper safe area handling
+- Haptic feedback
+- Dark/light mode support
+
+## Dependencies
+
+- expo-router
+- expo-blur
+- react-native-reanimated
+- @react-navigation/native
+- expo-router/ui
+
+## Development
+
+This project uses:
+- TypeScript for type safety
+- Expo Router for navigation
+- React Native Reanimated for animations
+- Expo Blur for visual effects
+
+## License
+
+MIT
