@@ -4,7 +4,6 @@ This project demonstrates how to implement custom tabs in an Expo app using Expo
 
 ## Demo
 
-![Demo Video](assets/videos/demo.mp4)
 
 ## Features
 
